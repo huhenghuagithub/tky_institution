@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.CompanyCodeComparisonMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.CompanyCodeComparison">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="sex_company_code" jdbcType="VARCHAR" property="sexCompanyCode" />
+    <result column="sex_company_name" jdbcType="VARCHAR" property="sexCompanyName" />
+    <result column="sex_short_name" jdbcType="VARCHAR" property="sexShortName" />
+    <result column="bis_virtual" jdbcType="VARCHAR" property="bisVirtual" />
+    <result column="is_depart" jdbcType="VARCHAR" property="isDepart" />
+    <result column="sap_company_code" jdbcType="VARCHAR" property="sapCompanyCode" />
+    <result column="sap_company_name" jdbcType="VARCHAR" property="sapCompanyName" />
+  </resultMap>
+
+</mapper>

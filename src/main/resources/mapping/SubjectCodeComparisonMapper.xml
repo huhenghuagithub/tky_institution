@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.SubjectCodeComparisonMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.SubjectCodeComparison">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sap_subject_code" jdbcType="VARCHAR" property="sapSubjectCode" />
+    <result column="sap_subject_name" jdbcType="VARCHAR" property="sapSubjectName" />
+    <result column="sap_functional_scope_code" jdbcType="VARCHAR" property="sapFunctionalScopeCode" />
+    <result column="sap_functional_scope_name" jdbcType="VARCHAR" property="sapFunctionalScopeName" />
+    <result column="sex_subject_code" jdbcType="VARCHAR" property="sexSubjectCode" />
+    <result column="sex_subject_name" jdbcType="VARCHAR" property="sexSubjectName" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,361 @@
+tky-institution 2021-01-14 09-35-32 032 DEBUG  Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\CompanyCodeComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\ConditionOneSourceDataMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\CustomerCodeComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\DimensionValueComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\SapSourceDataMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\SubjectCodeComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\SubjectDimensionComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\SupplierCodeComparisonMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Identified candidate component class: file [D:\IDEA\tky\tky-institution\target\classes\com\institution\transfer\dao\mapper\XtSubjectInfoMapper.class] 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'companyCodeComparisonMapper' and 'com.institution.transfer.dao.mapper.CompanyCodeComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'companyCodeComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'conditionOneSourceDataMapper' and 'com.institution.transfer.dao.mapper.ConditionOneSourceDataMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'conditionOneSourceDataMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'customerCodeComparisonMapper' and 'com.institution.transfer.dao.mapper.CustomerCodeComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'customerCodeComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'dimensionValueComparisonMapper' and 'com.institution.transfer.dao.mapper.DimensionValueComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'dimensionValueComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'sapSourceDataMapper' and 'com.institution.transfer.dao.mapper.SapSourceDataMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'sapSourceDataMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'subjectCodeComparisonMapper' and 'com.institution.transfer.dao.mapper.SubjectCodeComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'subjectCodeComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'subjectDimensionComparisonMapper' and 'com.institution.transfer.dao.mapper.SubjectDimensionComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'subjectDimensionComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'supplierCodeComparisonMapper' and 'com.institution.transfer.dao.mapper.SupplierCodeComparisonMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'supplierCodeComparisonMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Creating MapperFactoryBean with name 'xtSubjectInfoMapper' and 'com.institution.transfer.dao.mapper.XtSubjectInfoMapper' mapperInterface 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Enabling autowire by type for MapperFactoryBean with name 'xtSubjectInfoMapper'. 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Searching for mappers annotated with @Mapper 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Using auto-configuration base package 'com.institution.transfer' 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Searching for mappers annotated with @Mapper' 
+tky-institution 2021-01-14 09-35-34 034 DEBUG  Using auto-configuration base package 'com.institution.transfer' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Using VFS adapter tk.mybatis.mapper.autoconfigure.SpringBootVFS 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.CompanyCodeComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.ConditionOneSourceDataMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.CustomerCodeComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.DimensionValueComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.SapSourceDataMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.SubjectCodeComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.SubjectDimensionComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.SupplierCodeComparisonMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.mapper.XtSubjectInfoMapper matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.CompanyCodeComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.ConditionOneSourceData matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.CustomerCodeComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.DimensionValueComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.SapSourceData matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.SubjectCodeComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.SubjectDimensionComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.SupplierCodeComparison matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Checking to see if class com.institution.transfer.dao.model.XtSubjectInfo matches criteria [is assignable to Object] 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Scanned package: 'com.institution.transfer.dao' for aliases 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Registered plugin: 'com.institution.transfer.config.MyBatisInterceptor@67fa5045' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\CompanyCodeComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\ConditionOneSourceDataMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\CustomerCodeComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\DimensionValueComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\SapSourceDataMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\SubjectCodeComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\SubjectDimensionComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\SupplierCodeComparisonMapper.xml]' 
+tky-institution 2021-01-14 09-35-37 037 DEBUG  Parsed mapper file: 'file [D:\IDEA\tky\tky-institution\target\classes\mapping\XtSubjectInfoMapper.xml]' 
+tky-institution 2021-01-14 09-35-39 039 DEBUG  initialising the handler methods 
+tky-institution 2021-01-14 09-35-39 039 DEBUG  No org.mybatis.spring.mapper.MapperFactoryBean found. 
+tky-institution 2021-01-14 09-35-39 039 DEBUG  No org.mybatis.spring.mapper.MapperFactoryBean found. 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Total number of request handlers 13 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/downloadFile], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/downloadFile], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/downloadMerchantsFile], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/downloadMerchantsFile], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/oneVoucherAndOneSubjectAndZeroMap], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/oneVoucherAndOneSubjectAndZeroMap], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/screenVoucherNums], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/screenVoucherNums], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/sexVoucherType], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/sexVoucherType], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/testSelectSql], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/testSelectSql], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/migration/textValueNums], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/migration/textValueNums], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/screenData/textValueNums], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/screenData/textValueNums], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}} 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Combined number of request handlers 13 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Adding return parameter of type Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Reading parameters models for handlerMethod |error| 
+tky-institution 2021-01-14 09-35-40 040 DEBUG  Finished reading parameters models for handlerMethod |error| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |error| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Skipping model of type Ljava/lang/Object; as its either a container type, map, enum or base type, or its already been handled 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Did not find any parameter models for java.util.Map<java.lang.String,java.lang.Object> 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Marking base type Ljava/lang/Object; as seen 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Map«string,object» 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method error 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lorg/springframework/web/servlet/ModelAndView; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |errorHtml| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |errorHtml| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |errorHtml| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property view 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'view' renamed to 'view' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property view to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModel 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'model' renamed to 'model' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property model to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModel 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModel 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModel 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModel 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property status 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'status' renamed to 'status' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property status to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property empty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isEmpty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'empty' renamed to 'empty' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property empty to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isEmpty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isEmpty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isEmpty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isEmpty 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property viewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getViewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'viewName' renamed to 'viewName' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property viewName to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getViewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getViewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getViewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getViewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property reference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isReference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'reference' renamed to 'reference' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property reference to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isReference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isReference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isReference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member isReference 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property modelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'modelMap' renamed to 'modelMap' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property modelMap to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getModelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Inferred 7 properties. Properties found empty, model, modelMap, reference, status, view, viewName 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: ModelAndView, name: ModelAndView, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding a new model with key ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding type Lorg/springframework/ui/ModelMap; for parameter modelMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Recursively resolving dependencies for value type Ljava/lang/Object; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Marking base type Ljava/lang/Object; as seen 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding type Lorg/springframework/web/servlet/View; for parameter view 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Recursively resolving dependencies for type Lorg/springframework/web/servlet/View; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property contentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getContentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'contentType' renamed to 'contentType' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property contentType to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getContentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getContentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getContentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getContentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Inferred 1 properties. Properties found contentType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding a new model with key View 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:ModelAndView 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method errorHtml 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type V 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |downloadFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |downloadFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |downloadFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Skipping model of type V as its either a container type, map, enum or base type, or its already been handled 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Did not find any parameter models for void 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: null 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method downloadFile 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method downloadFile 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type V 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |downloadMerchantsFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |downloadMerchantsFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |downloadMerchantsFile| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Did not find any parameter models for void 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: null 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method downloadMerchantsFile 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method downloadMerchantsFile 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |oneVoucherAndOneSubjectAndZeroMap| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |oneVoucherAndOneSubjectAndZeroMap| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |oneVoucherAndOneSubjectAndZeroMap| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property status 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'status' renamed to 'status' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property status to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getStatus 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property message 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getMessage 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'message' renamed to 'message' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property message to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getMessage 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getMessage 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getMessage 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getMessage 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading property body 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getBody 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Name 'body' renamed to 'body' 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding property body to model 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getBody 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getBody 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getBody 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Evaluating unwrapped getter for member getBody 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Inferred 3 properties. Properties found body, message, status 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding a new model with key Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method oneVoucherAndOneSubjectAndZeroMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method oneVoucherAndOneSubjectAndZeroMap 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |screenVoucherNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |screenVoucherNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |screenVoucherNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method screenVoucherNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method screenVoucherNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |sexVoucherType| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |sexVoucherType| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |sexVoucherType| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method sexVoucherType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method sexVoucherType 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |testSelectSql| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |testSelectSql| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |testSelectSql| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method testSelectSql 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method testSelectSql 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method textValueNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method textValueNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding return parameter of type Lcom/institution/transfer/common/model/Result; 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Finished reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Reading parameters models for handlerMethod |textValueNums| 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Generated parameter model id: Result, name: Result, schema: {} models 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Adding a new model with key Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting spring response class to: Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Extension count 1 for method textValueNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Setting response class to:Result 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Authorization count 0 for method textValueNums 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@986b619] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==>  Preparing: SELECT id,sap_code,sap_name,judgment_rule,sex_dimension_code,sex_dimension_name,sex_dimension_value FROM dimension_value_comparison  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  <==      Total: 870 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@986b619] 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ac685ef] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==>  Preparing: SELECT id,sap_subject_code,sap_subject_name,sap_functional_scope_code,sap_functional_scope_name,sex_subject_code,sex_subject_name FROM subject_code_comparison  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  <==      Total: 988 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ac685ef] 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f20b022] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==>  Preparing: SELECT sex_subject_code, sex_subject_name, sex_dimension_code, sex_dimension_name FROM subject_dimension_comparison  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  <==      Total: 222 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f20b022] 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@592cb470] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==>  Preparing: SELECT id,xt_subject_code,xt_subject_name,xt_subject_nature,xt_balance_direction,xt_subject_area,xt_property1,xt_property2,xt_subject_parent_code,xt_full_path FROM xt_subject_info  
+tky-institution 2021-01-14 09-35-41 041 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  <==      Total: 4458 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@592cb470] 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f45dfec] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==>  Preparing: SELECT id,sap_merchants_code,sex_merchants_code,sex_merchants_name FROM customer_code_comparison  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  <==      Total: 20944 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f45dfec] 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5477d90e] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==>  Preparing: SELECT id,sap_merchants_code,sex_merchants_code,sex_merchants_name FROM supplier_code_comparison  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  <==      Total: 19741 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5477d90e] 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Creating a new SqlSession 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@588d630d] was not registered for synchronization because synchronization is not active 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3b9c9b8b] will not be managed by Spring 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==>  Preparing: SELECT id,sap_company_code,sap_voucher_code,sap_company_code_voucher_code FROM condition_one_source_data  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  ==> Parameters:  
+tky-institution 2021-01-14 09-35-42 042 DEBUG  <==      Total: 19085 
+tky-institution 2021-01-14 09-35-42 042 DEBUG  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@588d630d] 

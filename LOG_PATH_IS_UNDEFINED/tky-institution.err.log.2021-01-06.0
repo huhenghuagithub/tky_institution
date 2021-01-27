@@ -1,0 +1,51 @@
+tky-institution 2021-01-06 08-45-52 052 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-45-54 054 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 08-47-35 035 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-47-41 041 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 08-49-22 022 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-49-34 034 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 08-52-01 001 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-52-11 011 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 08-54-25 025 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-54-30 030 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 08-56-08 008 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 08-56-11 011 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 14-49-51 051 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 14-49-54 054 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-19-32 032 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-19-34 034 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-21-30 030 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-21-35 035 ERROR  Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.institution.transfer.TkyInstitutionApplication.main(TkyInstitutionApplication.java:16)
+Caused by: java.lang.NullPointerException: null
+	at com.institution.transfer.config.SettingConfig.run(SettingConfig.java:155)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+tky-institution 2021-01-06 15-24-03 003 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-24-09 009 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-27-34 034 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-27-44 044 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-29-49 049 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-30-00 000 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-32-18 018 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-32-23 023 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-34-12 012 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-34-14 014 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-43-25 025 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-43-27 027 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 15-44-30 030 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 15-44-36 036 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 16-01-16 016 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 16-01-23 023 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 16-03-56 056 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 16-04-11 011 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 16-06-09 009 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 16-06-22 022 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2021-01-06 16-08-31 031 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2021-01-06 16-08-34 034 ERROR  项目启动完成，初始化所需静态资源完成================= 

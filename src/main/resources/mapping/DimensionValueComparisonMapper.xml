@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.DimensionValueComparisonMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.DimensionValueComparison">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="sap_code" jdbcType="VARCHAR" property="sapCode" />
+    <result column="sap_name" jdbcType="VARCHAR" property="sapName" />
+    <result column="judgment_rule" jdbcType="VARCHAR" property="judgmentRule" />
+    <result column="sex_dimension_code" jdbcType="VARCHAR" property="sexDimensionCode" />
+    <result column="sex_dimension_name" jdbcType="VARCHAR" property="sexDimensionName" />
+    <result column="sex_dimension_value" jdbcType="VARCHAR" property="sexDimensionValue" />
+  </resultMap>
+
+</mapper>

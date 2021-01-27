@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.SubjectDimensionComparisonMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.SubjectDimensionComparison">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sex_subject_code" jdbcType="VARCHAR" property="sexSubjectCode" />
+    <result column="sex_subject_name" jdbcType="VARCHAR" property="sexSubjectName" />
+    <result column="sex_dimension_code" jdbcType="VARCHAR" property="sexDimensionCode" />
+    <result column="sex_dimension_name" jdbcType="VARCHAR" property="sexDimensionName" />
+  </resultMap>
+
+  <resultMap id="SubjectDimensionMap" type="com.institution.transfer.vo.SubjectDimensionVO">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sex_subject_code" jdbcType="VARCHAR" property="sexSubjectCode" />
+    <result column="sex_subject_name" jdbcType="VARCHAR" property="sexSubjectName" />
+    <association property="dimensionMessageVOS" javaType="com.institution.transfer.vo.DimensionMessageVO">
+      <result column="sex_dimension_code" jdbcType="VARCHAR" property="sexDimensionCode" />
+      <result column="sex_dimension_name" jdbcType="VARCHAR" property="sexDimensionName" />
+    </association>
+  </resultMap>
+
+  <select id="selectSubjectDimensionList" resultMap="SubjectDimensionMap">
+
+    SELECT
+        sex_subject_code,
+        sex_subject_name,
+        sex_dimension_code,
+        sex_dimension_name
+    FROM
+        subject_dimension_comparison
+
+  </select>
+
+</mapper>

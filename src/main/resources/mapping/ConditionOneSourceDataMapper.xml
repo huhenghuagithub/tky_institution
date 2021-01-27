@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.ConditionOneSourceDataMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.ConditionOneSourceData">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sap_company_code" jdbcType="VARCHAR" property="sapCompanyCode" />
+    <result column="sap_voucher_code" jdbcType="VARCHAR" property="sapVoucherCode" />
+    <result column="sap_company_code_voucher_code" jdbcType="VARCHAR" property="sapCompanyCodeVoucherCode" />
+  </resultMap>
+</mapper>

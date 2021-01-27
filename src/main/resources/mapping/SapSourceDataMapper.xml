@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.SapSourceDataMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.SapSourceData">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sap_company_code" jdbcType="VARCHAR" property="sapCompanyCode" />
+    <result column="sap_voucher_code" jdbcType="BIGINT" property="sapVoucherCode" />
+    <result column="sap_post_date" jdbcType="TIMESTAMP" property="sapPostDate" />
+    <result column="sap_text_value" jdbcType="VARCHAR" property="sapTextValue" />
+    <result column="sap_debit_credit" jdbcType="VARCHAR" property="sapDebitCredit" />
+    <result column="sap_general_ledger" jdbcType="VARCHAR" property="sapGeneralLedger" />
+    <result column="sap_wbs_element" jdbcType="VARCHAR" property="sapWbsElement" />
+    <result column="sap_currency_amount" jdbcType="VARCHAR" property="sapCurrencyAmount" />
+    <result column="sap_reverse_bookkeeping" jdbcType="VARCHAR" property="sapReverseBookkeeping" />
+    <result column="sap_functional_scope" jdbcType="VARCHAR" property="sapFunctionalScope" />
+    <result column="sap_touching_person" jdbcType="VARCHAR" property="sapTouchingPerson" />
+    <result column="sap_merchants_supplier" jdbcType="VARCHAR" property="sapMerchantsSupplier" />
+    <result column="sap_merchants_customer" jdbcType="VARCHAR" property="sapMerchantsCustomer" />
+    <result column="sap_merchants" jdbcType="VARCHAR" property="sapMerchants" />
+    <result column="sap_alternative_reference_number" jdbcType="VARCHAR" property="sapAlternativeReferenceNumber" />
+  </resultMap>
+
+  <resultMap id="ResultMap" type="com.institution.transfer.vo.SqlResultVO">
+    <id column="id" jdbcType="INTEGER" property="id"/>
+    <result column="sap_company_code" jdbcType="VARCHAR" property="sapCompanyCode" />
+    <result column="sap_company_name" jdbcType="VARCHAR" property="sapCompanyName" />
+    <result column="sex_company_code" jdbcType="VARCHAR" property="sexCompanyCode" />
+    <result column="sex_company_name" jdbcType="VARCHAR" property="sexCompanyName" />
+    <result column="sap_general_ledger" jdbcType="VARCHAR" property="sapGeneralLedger" />
+    <result column="sap_voucher_code" jdbcType="VARCHAR" property="sapVoucherCode" />
+    <result column="sap_post_date" jdbcType="VARCHAR" property="sapPostDate" />
+    <result column="sap_text_value" jdbcType="VARCHAR" property="sapTextValue" />
+    <result column="sap_debit_credit" jdbcType="VARCHAR" property="sapDebitCredit" />
+    <result column="sap_currency_amount" jdbcType="VARCHAR" property="sapCurrencyAmount" />
+    <result column="sap_wbs_element" jdbcType="VARCHAR" property="sapWbsElement" />
+    <result column="sap_reverse_bookkeeping" jdbcType="VARCHAR" property="sapReverseBookkeeping" />
+    <result column="sap_functional_scope" jdbcType="VARCHAR" property="sapFunctionalScope" />
+    <result column="sap_touching_person" jdbcType="VARCHAR" property="sapTouchingPerson" />
+    <result column="sap_merchants" jdbcType="VARCHAR" property="sapMerchants" />
+    <result column="first_reviewer" jdbcType="VARCHAR" property="firstReviewer" />
+    <result column="second_reviewer" jdbcType="VARCHAR" property="secondReviewer" />
+    <result column="sap_merchants_supplier" jdbcType="VARCHAR" property="sapMerchantsSupplier" />
+    <result column="sap_merchants_customer" jdbcType="VARCHAR" property="sapMerchantsCustomer" />
+    <result column="sap_alternative_reference_number" jdbcType="VARCHAR" property="sapAlternativeReferenceNumber" />
+  </resultMap>
+
+  <resultMap id="VoucherTypeMap" type="com.institution.transfer.vo.VoucherVO">
+    <id column="id" jdbcType="INTEGER" property="id"/>
+    <result column="sap_company_code" jdbcType="VARCHAR" property="sapCompanyCode" />
+    <result column="sap_voucher_code" jdbcType="VARCHAR" property="sapVoucherCode" />
+    <result column="sap_post_date" jdbcType="VARCHAR" property="sapPostDate" />
+    <result column="sap_debit_credit" jdbcType="VARCHAR" property="sapDebitCredit" />
+  </resultMap>
+
+  <select id="selectMaxId" resultType="java.lang.Integer">
+
+    select max(id) from sap_source_data
+
+  </select>
+
+  <select id="selectCompanyCodes" resultType="java.util.Map">
+    SELECT DISTINCT
+        ccc.sap_company_code AS sapCompanyCode,
+        ccc.sex_company_code AS sexCompanyCode,
+        ccc.sex_company_name AS sexCompanyName
+    FROM
+        ${tableName} ssd
+        LEFT JOIN company_code_comparison ccc ON ssd.sap_company_code = ccc.sap_company_code
+  </select>
+
+  <select id="selectSqlResultVOByStartAndEnd" parameterType="java.lang.Integer" resultMap="ResultMap">
+    SELECT
+      ssd.id,
+      ssd.sap_company_code,
+      ssd.sap_general_ledger,
+      ssd.sap_voucher_code,
+      date_format(ssd.sap_post_date, '%Y-%m-%d') as sap_post_date,
+      ssd.sap_text_value,
+      ssd.sap_debit_credit,
+      convert(ssd.sap_currency_amount,decimal(20,2)) as sap_currency_amount,
+      ssd.sap_wbs_element,
+      ssd.sap_reverse_bookkeeping,
+      ssd.sap_functional_scope,
+      ssd.sap_touching_person,
+      ssd.sap_merchants,
+      ssd.sap_merchants_supplier,
+      ssd.sap_merchants_customer,
+      ccc.sap_company_name,
+      ccc.sex_company_code,
+      ccc.sex_company_name,
+      ccc.first_reviewer,
+      ccc.second_reviewer,
+      ssd.sap_alternative_reference_number
+    FROM
+        ${tableName} ssd
+        LEFT JOIN company_code_comparison ccc on ssd.sap_company_code=ccc.sap_company_code
+    where ssd.sap_company_code=#{sapCompanyCode}
+    <if test="start!=0 and end!=0 ">
+      and ssd.id between #{start} and #{end}
+    </if>
+    order by ssd.sap_post_date,ssd.sap_voucher_code
+  </select>
+
+  <select id="selectVoucherType" resultType="java.util.Map" parameterType="java.lang.String">
+    SELECT
+        ssd.id as id,
+        ssd.sap_company_code as sapCompanyCode,
+        ssd.sap_general_ledger as sapGeneralLedger,
+        ssd.sap_voucher_code AS sapVoucherCode,
+        ssd.sap_functional_scope AS sapFunctionalScope,
+        date_format(ssd.sap_post_date, '%Y-%m-%d') as sapPostDate,
+        ssd.sap_debit_credit AS sapDebitCredit
+    FROM
+        ${tableName} ssd
+    <if test="sapCompanyCode!=''">
+      where ssd.sap_company_code=#{sapCompanyCode}
+    </if>
+    order by ssd.sap_post_date,ssd.sap_voucher_code
+  </select>
+
+
+
+</mapper>

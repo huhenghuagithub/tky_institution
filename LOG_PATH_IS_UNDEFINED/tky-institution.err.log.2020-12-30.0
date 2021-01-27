@@ -1,0 +1,253 @@
+tky-institution 2020-12-30 08-58-23 023 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 08-58-24 024 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 08-58-53 053 ERROR  线程http-nio-8080-exec-10查询表格数据1到19264 
+tky-institution 2020-12-30 09-02-04 004 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 09-02-05 005 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 09-02-13 013 ERROR  线程http-nio-8080-exec-1查询表格数据1到19264 
+tky-institution 2020-12-30 09-05-14 014 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 09-05-21 021 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 09-10-39 039 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 09-10-40 040 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 09-11-40 040 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 09-11-41 041 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 09-15-31 031 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 09-25-00 000 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 09-25-04 004 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 09-25-55 055 ERROR  线程http-nio-8080-exec-2查询表格数据1到80000 
+tky-institution 2020-12-30 09-26-07 007 ERROR  线程http-nio-8080-exec-2查询表格数据80001到160000 
+tky-institution 2020-12-30 09-26-18 018 ERROR  线程http-nio-8080-exec-2查询表格数据160001到194632 
+tky-institution 2020-12-30 11-01-00 000 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 11-01-02 002 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 11-03-14 014 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 11-03-14 014 ERROR  线程http-nio-8080-exec-2发生异常 
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'ccc.sap_merchants_customer' in 'field list'
+### The error may exist in file [D:\IDEA\tky\tky-institution\target\classes\mapping\SapSourceDataMapper.xml]
+### The error may involve com.institution.transfer.dao.mapper.SapSourceDataMapper.selectSqlResultVOByStartAndEnd-Inline
+### The error occurred while setting parameters
+### SQL: SELECT       ssd.id,       ssd.sap_company_code,       ssd.sap_general_ledger,       ssd.sap_voucher_code,       date_format(ssd.sap_post_date, '%Y-%m-%d') as sap_post_date,       ssd.sap_text_value,       ssd.sap_debit_credit,       convert(ssd.sap_currency_amount,decimal(20,2)) as sap_currency_amount,       ssd.sap_wbs_element,       ssd.sap_reverse_bookkeeping,       ssd.sap_functional_scope,       ssd.sap_touching_person,       ssd.sap_merchants,       ssd.sap_merchants_supplier,       ssd.sap_merchants,       ccc.sap_company_name,       ccc.sex_company_code,       ccc.sap_merchants_customer,       ccc.first_reviewer,       ccc.second_reviewer     FROM         sap_source_data ssd         LEFT JOIN company_code_comparison ccc on ssd.sap_company_code=ccc.sap_company_code             where ssd.id between ? and ?           order by ssd.id
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'ccc.sap_merchants_customer' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'ccc.sap_merchants_customer' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy79.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy84.selectSqlResultVOByStartAndEnd(Unknown Source)
+	at com.institution.transfer.service.impl.DataMigrationServiceImpl.downloadFile(DataMigrationServiceImpl.java:115)
+	at com.institution.transfer.controller.DataMigrationController.downloadFile(DataMigrationController.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'ccc.sap_merchants_customer' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy113.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 58 common frames omitted
+tky-institution 2020-12-30 11-05-18 018 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 11-05-20 020 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 11-06-17 017 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 11-15-38 038 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 11-15-40 040 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 11-15-47 047 ERROR  线程http-nio-8080-exec-1查询表格数据1到19264 
+tky-institution 2020-12-30 11-18-20 020 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 11-18-22 022 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 11-18-59 059 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 14-10-42 042 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 14-10-45 045 ERROR  Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.institution.transfer.TkyInstitutionApplication.main(TkyInstitutionApplication.java:16)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 7
+	at java.lang.String.substring(String.java:1963)
+	at com.institution.transfer.config.SettingConfig.run(SettingConfig.java:144)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+tky-institution 2020-12-30 14-13-45 045 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 14-14-19 019 ERROR  Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.institution.transfer.TkyInstitutionApplication.main(TkyInstitutionApplication.java:16)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 7
+	at java.lang.String.substring(String.java:1963)
+	at com.institution.transfer.config.SettingConfig.run(SettingConfig.java:144)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+tky-institution 2020-12-30 14-15-28 028 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 14-15-31 031 ERROR  __null=[VoucherDetailsVO(sapDebitCredit=, sexSubjectCode=null, sexSubjectName=null)]发生异常=====null 
+tky-institution 2020-12-30 14-15-32 032 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 14-16-26 026 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 14-16-31 031 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 14-16-52 052 ERROR  线程http-nio-8080-exec-2查询表格数据1到80000 
+tky-institution 2020-12-30 14-17-03 003 ERROR  线程http-nio-8080-exec-2查询表格数据80001到160000 
+tky-institution 2020-12-30 14-17-14 014 ERROR  线程http-nio-8080-exec-2查询表格数据160001到194632 
+tky-institution 2020-12-30 15-51-19 019 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 15-51-27 027 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 15-53-24 024 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 15-53-37 037 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 15-53-48 048 ERROR  线程http-nio-8080-exec-1查询表格数据160001到240000 
+tky-institution 2020-12-30 15-53-58 058 ERROR  线程http-nio-8080-exec-1查询表格数据240001到314199 
+tky-institution 2020-12-30 15-57-15 015 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 15-57-23 023 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 15-57-42 042 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 15-57-53 053 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 15-58-04 004 ERROR  线程http-nio-8080-exec-1查询表格数据160001到240000 
+tky-institution 2020-12-30 15-58-15 015 ERROR  线程http-nio-8080-exec-1查询表格数据240001到308621 
+tky-institution 2020-12-30 16-35-30 030 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 16-35-34 034 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 16-35-56 056 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 16-36-08 008 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 16-36-19 019 ERROR  线程http-nio-8080-exec-1查询表格数据160001到167678 
+tky-institution 2020-12-30 16-42-27 027 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 16-42-29 029 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 16-42-34 034 ERROR  线程http-nio-8080-exec-1查询表格数据1到62925 
+tky-institution 2020-12-30 16-46-25 025 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 16-46-30 030 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 16-46-50 050 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 16-47-01 001 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 16-47-13 013 ERROR  线程http-nio-8080-exec-1查询表格数据160001到196857 
+tky-institution 2020-12-30 16-59-43 043 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 16-59-49 049 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 17-00-42 042 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 17-00-53 053 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 17-01-04 004 ERROR  线程http-nio-8080-exec-1查询表格数据160001到196857 
+tky-institution 2020-12-30 17-03-47 047 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 17-03-53 053 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 17-03-57 057 ERROR  线程http-nio-8080-exec-2查询表格数据1到80000 
+tky-institution 2020-12-30 17-04-08 008 ERROR  线程http-nio-8080-exec-2查询表格数据80001到160000 
+tky-institution 2020-12-30 17-04-19 019 ERROR  线程http-nio-8080-exec-2查询表格数据160001到196857 
+tky-institution 2020-12-30 17-39-55 055 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 17-40-00 000 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 17-41-17 017 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 17-41-31 031 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 17-41-42 042 ERROR  线程http-nio-8080-exec-1查询表格数据160001到196857 
+tky-institution 2020-12-30 17-52-57 057 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 17-53-02 002 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 17-54-24 024 ERROR  线程http-nio-8080-exec-2查询表格数据1到80000 
+tky-institution 2020-12-30 17-54-36 036 ERROR  线程http-nio-8080-exec-2查询表格数据80001到160000 
+tky-institution 2020-12-30 17-54-48 048 ERROR  线程http-nio-8080-exec-2查询表格数据160001到196857 
+tky-institution 2020-12-30 17-59-19 019 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 17-59-28 028 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-00-26 026 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 18-00-37 037 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 18-00-48 048 ERROR  线程http-nio-8080-exec-1查询表格数据160001到240000 
+tky-institution 2020-12-30 18-00-59 059 ERROR  线程http-nio-8080-exec-1查询表格数据240001到308621 
+tky-institution 2020-12-30 18-09-49 049 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-09-56 056 ERROR  Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.institution.transfer.TkyInstitutionApplication.main(TkyInstitutionApplication.java:16)
+Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+	at com.institution.transfer.config.SettingConfig.run(SettingConfig.java:112)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+tky-institution 2020-12-30 18-12-44 044 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-12-54 054 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-12-59 059 ERROR  线程http-nio-8080-exec-1查询表格数据1到80000 
+tky-institution 2020-12-30 18-13-10 010 ERROR  线程http-nio-8080-exec-1查询表格数据80001到160000 
+tky-institution 2020-12-30 18-13-21 021 ERROR  线程http-nio-8080-exec-1查询表格数据160001到240000 
+tky-institution 2020-12-30 18-13-31 031 ERROR  线程http-nio-8080-exec-1查询表格数据240001到308621 
+tky-institution 2020-12-30 18-15-10 010 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-15-11 011 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-15-40 040 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 18-18-29 029 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-18-30 030 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-19-11 011 ERROR  线程http-nio-8080-exec-2查询表格数据1到19264 
+tky-institution 2020-12-30 18-27-47 047 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-27-48 048 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-27-56 056 ERROR  线程http-nio-8080-exec-1查询表格数据1到19264 
+tky-institution 2020-12-30 18-30-25 025 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-30-26 026 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-30-31 031 ERROR  线程http-nio-8080-exec-1查询表格数据1到19264 
+tky-institution 2020-12-30 18-34-56 056 ERROR  项目启动完成，开始初始化所需静态资源================= 
+tky-institution 2020-12-30 18-35-07 007 ERROR  项目启动完成，初始化所需静态资源完成================= 
+tky-institution 2020-12-30 18-35-14 014 ERROR  线程http-nio-8080-exec-2查询表格数据1到80000 
+tky-institution 2020-12-30 18-35-25 025 ERROR  线程http-nio-8080-exec-2查询表格数据80001到160000 
+tky-institution 2020-12-30 18-35-35 035 ERROR  线程http-nio-8080-exec-2查询表格数据160001到240000 
+tky-institution 2020-12-30 18-35-45 045 ERROR  线程http-nio-8080-exec-2查询表格数据240001到308621 

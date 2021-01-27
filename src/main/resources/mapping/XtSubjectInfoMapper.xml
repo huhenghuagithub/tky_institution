@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.institution.transfer.dao.mapper.XtSubjectInfoMapper">
+  <resultMap id="BaseResultMap" type="com.institution.transfer.dao.model.XtSubjectInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="xt_subject_code" jdbcType="VARCHAR" property="xtSubjectCode" />
+    <result column="xt_subject_name" jdbcType="VARCHAR" property="xtSubjectName" />
+    <result column="xt_subject_nature" jdbcType="VARCHAR" property="xtSubjectNature" />
+    <result column="xt_balance_direction" jdbcType="VARCHAR" property="xtBalanceDirection" />
+    <result column="xt_subject_area" jdbcType="VARCHAR" property="xtSubjectArea" />
+    <result column="xt_property1" jdbcType="VARCHAR" property="xtProperty1" />
+    <result column="xt_property2" jdbcType="VARCHAR" property="xtProperty2" />
+    <result column="xt_subject_parent_code" jdbcType="VARCHAR" property="xtSubjectParentCode" />
+    <result column="xt_full_path" jdbcType="VARCHAR" property="xtFullPath" />
+  </resultMap>
+</mapper>
